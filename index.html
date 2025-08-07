@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML to lt gt converter</h1>
+    <pre><code>&lt;h1&gt;HTML to lt gt converter&lt;/h1&gt;</code></pre>
+    <div class="container-inputs">
+        <div class="left-container c_sn">
+            <div class="t-container c-header">
+                <label for="codetext">Enter your code</label>
+                <button id="submit">Submit</button>
+            </div>
+            <textarea name="codetext" id="main-code"></textarea>
+        </div>
+        <div class="right-container c_sn">
+            <div class="t-container-2 c-header">
+                <label for="output">Output</label>
+                <button id="coppy">Coppy</button>
+            </div>
+            <textarea name="output" id="display"></textarea>
+        </div>
+    </div>
+    <script>
+        const main_code = document.querySelector("#main-code");
+        const display = document.querySelector("#display");
+        const submit = document.querySelector("#submit");
+        const F2 = document.querySelector("#F2");
+        submit.addEventListener("click", () => {
+            let x = main_code.value;
+            x = x.replaceAll(/</g, "&lt;");
+            x = x.replaceAll(/>/g, "&gt;");
+            display.value = x;
+        });
+    </script>
+</body>
+
+</html>
