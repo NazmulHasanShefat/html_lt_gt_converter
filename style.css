@@ -23,6 +23,7 @@ pre {
     margin: auto;
     background-color: #fff;
     border-left: 3px solid rgb(0, 160, 0);
+    overflow: auto;
 }
 
 textarea {
@@ -56,7 +57,7 @@ label{
     font-size: 1rem;
     font-weight: 600;
 }
-#submit , #coppy{
+#submit , #copy{
     font-weight: 600;
     font-family: var(--primary-font);
     background-color: black;
@@ -65,7 +66,7 @@ label{
     cursor: pointer;
     border-radius: 5px;
 }
-#submit:hover , #coppy:hover{
+#submit:hover , #copy:hover{
     background-color: #000288;
 }
 .c-header{
@@ -75,4 +76,12 @@ label{
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
+}
+@media screen and (max-width:800px) {
+    .container-inputs {
+        flex-direction: column;
+        align-items: center;
+    }.c_sn{
+    width: 95%;
+}
 }
