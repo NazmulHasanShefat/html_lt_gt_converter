@@ -50,7 +50,11 @@ code {
     height: max-content;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 19px;
+}
+.demo_image img{
+    width: 40%;
+    height: auto;
 }
 label{
     font-family: var(--primary-font);
@@ -83,5 +87,9 @@ label{
         align-items: center;
     }.c_sn{
     width: 95%;
+}
+.demo_image img{
+    width: 100%;
+    height: auto;
 }
 }
