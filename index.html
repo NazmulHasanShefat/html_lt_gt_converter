@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="icon" type="image/x-icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
-    <title>HTML lt gt converter</title>
+    <title>Code converter</title>
 </head>
 
 <body>
-    <h1>HTML to lt gt converter</h1>
+    <h1>HTML <span>&</span>lt<span>;</span> <span>&</span>gt<span>;</span> converter</h1>
     <div class="demo_image" style="display: flex; justify-content: center; align-items: center; margin: 5px;"><img src="./images/Screenshot 2025-08-08 012055.png" alt=""></div>
-    <pre><code>&lt;h1&gt;Welcome to HTML to lt gt converter&lt;/h1&gt;</code></pre>
+    <pre><code>&lt;h1&gt; Welcome to HTML to lt gt converter &lt;/h1&gt;</code></pre>
     
     <div class="container-inputs">
         <div class="left-container c_sn">
@@ -30,32 +30,8 @@
             <textarea name="output" id="display"></textarea>
         </div>
     </div>
-    <script>
-        const main_code = document.querySelector("#main-code");
-        const display = document.querySelector("#display");
-        const submit = document.querySelector("#submit");
-        const copy = document.querySelector("#copy");
-        submit.addEventListener("click", () => {
-            let x = main_code.value;
-            if(x){
-                x = x.replaceAll(/</g, "&lt;");
-                x = x.replaceAll(/>/g, "&gt;");
-                display.value = x;
-            }else{
-                alert("Please write something!")
-            }
-        });
-        copy.addEventListener("click",()=>{
-            let display_text = display.value;
-            if(display_text){
-                navigator.clipboard.writeText(display_text);
-                alert("copyd successful")
-            }else{
-                alert("Faild to copy text!")
-                
-            }
-        })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
