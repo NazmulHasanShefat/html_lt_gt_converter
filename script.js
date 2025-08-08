@@ -8,12 +8,13 @@ submit.addEventListener("click", () => {
     if (x) {
         x = x.replaceAll(/</g, "&lt;");
         x = x.replaceAll(/>/g, "&gt;");
-        x = x.replace(/&lt;|&gt;/gi, function(e){
-           return e = e.concat("</span>");
-        })
-        x = x.replace(/&lt;|&gt;/gi, function(v){
-           return '<span class="angle">' + v;
-        })
+
+        // x = x.replace(/&lt;|&gt;/gi, function(e){
+        //    return e = e.concat("</span>");
+        // })
+        // x = x.replace(/&lt;|&gt;/gi, function(v){
+        //    return '<span class="angle">' + v;
+        // })
 
         display.value = x;
         submit.innerText = "Converted";
