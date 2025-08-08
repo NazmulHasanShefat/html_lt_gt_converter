@@ -46,9 +46,10 @@ textarea {
     border: none;
     outline: none;
     font-family: "Source Code Pro", monospace;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     background-color: #ffffff;
+    color:#000288;
     resize: none;
 }
 .c_sn{

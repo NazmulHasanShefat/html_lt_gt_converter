@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="icon" type="image/x-icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
-    <title>Code converter</title>
+    <title>HTML Encoder v2</title>
 </head>
 
 
 
 <body>
-    <h1>HTML <span>&</span>lt<span>;</span> <span>&</span>gt<span>;</span> converter</h1>
+    <h1>HTML <span>&</span>lt<span>;</span> <span>&</span>gt<span>;</span> converter v2</h1>
     <div class="demo_image" style="display: flex; justify-content: center; align-items: center; margin: 5px;"><img src="./images/Screenshot 2025-08-08 012055.png" alt=""></div>
     <div class="cp-btn-container" style="width: 70%; display: flex; justify-content: end; margin:auto; padding: 3px;"><button id="copy_code_block_btn">copy<span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -25,7 +25,12 @@
     <div class="container-inputs">
         <div class="left-container c_sn">
             <div class="t-container c-header">
-                <label for="codetext">Enter your code</label>
+                <label for="codetext">Enter your code <span>
+                    <select name="Encoder" id="Encoder">
+                        <option value="select">HTML Encoder v2</option>
+                        <option value="select">HTML Encoder v1</option>
+                    </select>
+                </span></label>
                 <button id="submit">Submit</button>
             </div>
             <textarea name="codetext" id="main-code"></textarea>
