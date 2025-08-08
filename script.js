@@ -2,6 +2,7 @@ const main_code = document.querySelector("#main-code");
 const display = document.querySelector("#display");
 const submit = document.querySelector("#submit");
 const copy = document.querySelector("#copy");
+
 submit.addEventListener("click", () => {
     let x = main_code.value;
     if (x) {
@@ -10,7 +11,10 @@ submit.addEventListener("click", () => {
         x = x.replace(/&lt;|&gt;/gi, function(e){
            return e = e.concat("</span>");
         })
-        
+        x = x.replace(/&lt;|&gt;/gi, function(v){
+           return '<span class="angle">' + v;
+        })
+
         display.value = x;
         submit.innerText = "Converted";
         setTimeout(()=>{
