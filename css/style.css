@@ -23,6 +23,9 @@ body {
 .angle{
     color: rgb(0, 89, 255);
 }
+.check_icon{
+    stroke: #fff;
+}
 h1{
     text-align: center;
     color: #fff;
@@ -74,25 +77,29 @@ label{
     font-family: var(--primary-font);
     font-size: 1rem;
     font-weight: 600;
+    color: #000000;
 }
-#submit , #copy{
+.ctrls-btn{
     font-weight: 600;
     font-family: var(--primary-font);
-    background-color: black;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    outline: none;
     color: #fff;
     padding: 5px 20px;
     cursor: pointer;
     border-radius: 5px;
 }
-#submit:hover , #copy:hover{
+.ctrls-btn:hover{
     background-color: #000288;
 }
 .c-header{
-    background-color: #000288;
+    background-color: #fff;
+    background-color: #d1daff;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px 15px 20px;
     align-items: center;
 }
 #copy_code_block_btn{
@@ -110,6 +117,13 @@ label{
     margin-top: 5px;
 }
 
+
+/* form selector  */
+.form-selector{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+}
 
 
 
